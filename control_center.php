@@ -293,8 +293,8 @@ require_once 'assets/reqphp/addpost.php';
                                 </div>
                         </div>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-outline-success btns" data-toggle="modal" data-target=".mdl<?php echo $carcount; ?>"><i class="fas fa-edit"></i> تعديل</button>
-                            <a class="btn btn-outline-danger btns" href='assets/reqphp/activity_delete.php?activity=<?php echo $activity['activity_id']; ?>' role="button"><i class="fas fa-trash"></i> حذف</a>
+                            <button type="button" class="btn btn-outline-success btnp" data-toggle="modal" data-target=".mdl<?php echo $carcount; ?>"><i class="fas fa-edit"></i> تعديل</button>
+                            <a class="btn btn-outline-danger btnp" href='assets/reqphp/activity_delete.php?activity=<?php echo $activity['activity_id']; ?>' role="button"><i class="fas fa-trash"></i> حذف</a>
                         </div>
                         <div class="modal fade bd-example-modal-lg mdl<?php echo $carcount; ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">

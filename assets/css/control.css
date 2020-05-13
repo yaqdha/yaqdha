@@ -74,7 +74,14 @@ a:focus {
 .btns
 {
     left:10px;
-    width: 90px;
+    width: 95px;
+    margin: 10px 0 10px 0;    
+}
+
+.btnp
+{
+    left:25px;
+    width: 95px;
     margin: 10px 0 10px 0;    
 }
 
