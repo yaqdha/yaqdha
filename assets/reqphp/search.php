@@ -18,7 +18,7 @@ if(mysqli_num_rows($result) > 0)
 {
 	while($row = mysqli_fetch_array($result))
 	{
-        echo'<a for="result" href="activityfull.php?activity='. $row['activity_id'].'" class="list-group-item list-group-item-action">
+        echo'<a for="result" href="activity/'. $row['activity_id'].'" class="list-group-item list-group-item-action">
 		<h5 id="bookres" class="activitytext">'.$row['activity_desc'].'</h5>
 		<span id="auth">'.$row['activity_date'].'</span>
 		</a>';

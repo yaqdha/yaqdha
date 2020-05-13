@@ -13,7 +13,7 @@ if(!$result){
 $res = mysqli_fetch_assoc($result);
 if(!$res){
   echo "عذرا هذا المنشور غير متوفر";
-  echo '<a href="index.php">العوده للشاشه الرئيسية</a>';
+  echo '<a href="../home">العوده للشاشه الرئيسية</a>';
   exit;
 }
 ?>
@@ -24,12 +24,12 @@ if(!$res){
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>يقظة</title>
-    <link rel="shortcut icon" href="assets/img/yaqdha_logo.png" />
+    <link rel="shortcut icon" href="../assets/img/yaqdha_logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/323f58b68e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
 </head>
 
 <body dir="rtl">
@@ -40,7 +40,7 @@ if(!$res){
         <div class="col-md-12">
             <div class="card postmain">
                 <div class="card-body">
-                    <h3 class="text-right d-block card-title" style="color: #32748b;"><img style="width: 60px;margin-left: 10px;" src="assets/img/yaqdha_post.png">يقظة</h3>
+                    <h3 class="text-right d-block card-title" style="color: #32748b;"><img style="width: 60px;margin-left: 10px;" src="../assets/img/yaqdha_post.png">يقظة</h3>
                     <small class="form-text text-lowercase text-muted" style="font-size: 16px;"><?php echo $res['post_date']; ?></small>
                     <div class="postr card">
                         <!-- Post Text -->
@@ -62,7 +62,7 @@ if(!$res){
                                             {
                                                 echo '<div class="carousel-item">';
                                             }
-                                            echo '<img class="w-100 d-block imgcar" src="assets/postimg/';echo $imgs['image'];echo '" alt=""></div>';
+                                            echo '<img class="w-100 d-block imgcar" src="../assets/postimg/';echo $imgs['image'];echo '" alt=""></div>';
                                             $count = $count + 1;
                 
                                         }                           
@@ -86,7 +86,7 @@ if(!$res){
                         {
                         ?>
                         <div class="comment_div text-right">
-                        <div class="comntavg"><img src="assets/img/user.png" style="width:40px; margin:5px"><span class="name"><?php echo $comment['username'];?></span></div> 
+                        <div class="comntavg"><img src="../assets/img/user.png" style="width:40px; margin:5px"><span class="name"><?php echo $comment['username'];?></span></div> 
                         <p class="comments"><?php echo $comment['comment'];?></p>	
                         </div>
                         <?php } ?>
@@ -130,7 +130,7 @@ $(document).ready(function(){
     var cmntpostid = <?php echo $res['post_id'];?>;
     $("#morecomments").click(function(){
         cmntCount = cmntCount + 3;
-        $("#comment_box").load("assets/reqphp/load-comments.php", {
+        $("#comment_box").load("../assets/reqphp/load-comments.php", {
             cmntNewpostid: cmntpostid,
             cmntNewCount: cmntCount,
         });

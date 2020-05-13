@@ -19,7 +19,7 @@ if(isset($_POST['comentsubmt'])){
         echo "Can't add new data " . mysqli_error($conn);
         exit;
     } 
-    header('location: index.php');
+    header('location: home');
     exit;
     }
 
@@ -41,7 +41,7 @@ if(isset($_POST['comentfullsubmt'])){
         echo "Can't add new data " . mysqli_error($conn);
         exit;
     } 
-    header('location: postfull.php?post='.$postid.'');
+    header('location: ../post/'.$postid.'');
     exit;
     }
 
@@ -65,7 +65,7 @@ if(isset($_POST['actsubmt'])){
         echo "Can't add new data " . mysqli_error($conn);
         exit;
     } 
-    header('location: activity.php');
+    header('location: activities');
     exit;
     }
 
@@ -87,7 +87,7 @@ if(isset($_POST['actsubmt'])){
         echo "Can't add new data " . mysqli_error($conn);
         exit;
     } 
-    header('location: activityfull.php?activity='.$activeid.'');
+    header('location: ../activity/'.$activeid.'');
     exit;
     }
 

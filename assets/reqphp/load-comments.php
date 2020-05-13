@@ -12,7 +12,7 @@ $roaw = selectMoreComments($conn,$cmntNewpostid,$cmntNewCoun);?>
         {
         ?>
         <div class="comment_div text-right">
-        <div class="comntavg"><img src="assets/img/user.png" style="width:40px; margin:5px"><span class="name"><?php echo $comment['username'];?></span></div> 
+        <div class="comntavg"><img src="../assets/img/user.png" style="width:40px; margin:5px"><span class="name"><?php echo $comment['username'];?></span></div> 
         <p class="comments"><?php echo $comment['comment'];?></p>	
         </div>
         <?php
@@ -35,7 +35,7 @@ $(document).ready(function(){
     var cmntpostid = <?php echo $cmntNewpostid?>;
     $("#morecomments").click(function(){
         cmntCount = cmntCount + 3;
-        $("#comment_box").load("assets/reqphp/load-comments.php", {
+        $("#comment_box").load("../assets/reqphp/load-comments.php", {
             cmntNewpostid: cmntpostid,
             cmntNewCount: cmntCount,
         });
