@@ -14,7 +14,7 @@ if(!$result){
 $res = mysqli_fetch_assoc($result);
 if(!$res){
   echo "عذرا هذا النشاط غير متوفر";
-  echo '<a href="../activities">العوده للنشاطات</a>';
+  echo '<a href="activities">العوده للنشاطات</a>';
   exit;
 }
 ?>
